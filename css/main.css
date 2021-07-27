@@ -1,0 +1,166 @@
+.cintainer {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  text-align: center;
+}
+.box__state {
+  font-size: 40px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  margin: 0;
+  margin-top: 100px;
+}
+@media only screen and (max-width: 800px) {
+  .box__state {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .box__state {
+    margin-top: 65px;
+  }
+}
+.box__time {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  color: gold;
+  text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+}
+.box__temperature {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 6px gold;
+}
+.box__fog {
+  font-size: 25px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  text-transform: capitalize;
+}
+.box__between {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: -2px 2px 5px gold, -2px -2px 5px gold, 2px -2px 5px gold, 2px 2px 5px gold;
+  word-spacing: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.card__search {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  padding: 10px 20px;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 20px 0 20px 0;
+  border-bottom: 8px solid gold;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 450px) {
+  .card__search {
+    width: 100%;
+  }
+}
+.card__search:focus {
+  background-color: rgba(255, 215, 0, 0.5);
+  border-radius: 0 20px 0 20px;
+  border-bottom: 8px solid #333;
+}
+.card__search::-moz-placeholder {
+  font-size: 30px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  opacity: 0.7;
+}
+.card__search:-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  opacity: 0.7;
+}
+.card__search::placeholder {
+  font-size: 30px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  opacity: 0.7;
+}
+.card__search-invalid {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.card__search-invalid:focus {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+body {
+  background: url(../img/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 780px) {
+  body {
+    background-position: right -80px center;
+  }
+}
+
+.main {
+  position: relative;
+}
+.main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 800px) {
+  .main .container {
+    flex-direction: column;
+  }
+}
+
+.data {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+@media only screen and (max-width: 580px) {
+  .data {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+.data__hourse {
+  background-color: gold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  color: gold;
+  text-shadow: -1px 1px 4px red, -1px -1px 4px red, 1px -1px 4px red, 1px 1px 4px red;
+}/*# sourceMappingURL=main.css.map */

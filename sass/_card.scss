@@ -1,0 +1,48 @@
+.card {
+  @media only screen and(max-width:450px) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__search {
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, .5);
+    border-radius: 20px 0 20px 0;
+    border-bottom: 8px solid gold;
+    transition: all .3s;
+
+    @media only screen and(max-width:450px) {
+      width: 100%;
+    }
+
+    &:focus {
+      background-color: rgba(255, 215, 0, .5);
+      border-radius: 0 20px 0 20px;
+      border-bottom: 8px solid #333;
+    }
+
+    &::placeholder {
+      font-size: 30px;
+      font-weight: bold;
+      color: gold;
+      text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+      opacity: .7;
+    }
+
+    &-invalid {
+      background-color: rgba(255, 0, 0, .5);
+
+      &:focus {
+        background-color: rgba(255, 0, 0, .5);
+      }
+    }
+  }
+}

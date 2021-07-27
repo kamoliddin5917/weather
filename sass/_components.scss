@@ -1,0 +1,28 @@
+body {
+  background: url(../img/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+
+  @media only screen and(max-width: 780px) {
+    background-position: right -80px center;
+  }
+}
+
+.main {
+  position: relative;
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media only screen and(max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+}

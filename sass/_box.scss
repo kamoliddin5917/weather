@@ -1,0 +1,51 @@
+.box {
+  text-align: center;
+
+  &__state {
+    font-size: 40px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+    margin: 0;
+    margin-top: 100px;
+
+    @media only screen and(max-width: 800px) {
+      margin-top: 50px;
+    }
+
+    @media only screen and(max-width:320px) {
+      margin-top: 65px;
+    }
+  }
+
+  &__time {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: gold;
+    text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  }
+
+  &__temperature {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 6px gold;
+  }
+
+  &__fog {
+    font-size: 25px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+    text-transform: capitalize;
+  }
+
+  &__between {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: -2px 2px 5px gold, -2px -2px 5px gold, 2px -2px 5px gold, 2px 2px 5px gold;
+    word-spacing: 10px;
+  }
+}

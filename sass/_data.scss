@@ -1,0 +1,23 @@
+.data {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  z-index: 5;
+
+  @media only screen and(max-width:580px) {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  &__hourse {
+    background-color: gold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    color: gold;
+    text-shadow: -1px 1px 4px red, -1px -1px 4px red, 1px -1px 4px red, 1px 1px 4px red;
+  }
+}
